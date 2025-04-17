@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    background-color: #f7f7ff;
+    margin: 0; padding: 0;
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    background-color: #edeef7;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    display: flex; width: 90%; max-width: 1200px;
+    border: 8px solid #6741d9;
+  }
+  .sidebar {
+    background-color: #6741d9; color: #fff;
+    width: 250px; padding: 20px; box-sizing: border-box;
+    display: flex; flex-direction: column;
+  }
+  .sidebar h1 { margin-bottom: 30px; }
+  .sidebar ul { list-style: none; padding: 0; flex:1; }
+  .sidebar li a {
+    color: #fff; text-decoration: none; padding:10px 0; display:block;
+  }
+  .sidebar li a:hover { opacity:.7; }
+  .logout-btn {
+    margin-top: auto; color:#fff; text-decoration:none; padding:10px 0;
+  }
+  .main-content {
+    padding:20px; flex:1; box-sizing:border-box;
+  }
+  .filters {
+    display:flex; gap:10px; margin-bottom:20px;
+  }
+  .filter-button {
+    background-color:#f9f9f9; border:1px solid #ddd;
+    padding:5px 10px; border-radius:5px; cursor:pointer;
+  }
+  .filter-button:hover { background-color:#eee; }
+  .message-card {
+    background-color:#f2f1f6; padding:20px;
+    border-radius:10px; margin-bottom:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,.05);
+  }
+  .hidden { display:none; }
+  .right-sidebar {
+    background-color:#edeef7; width:250px;
+    padding:20px; box-sizing:border-box;
+    border-left:1px solid #ddd;
+  }
+  .student-list { list-style:none; padding:0; margin:0; }
+  .student-list li {
+    padding:5px 0; border-bottom:1px solid #eee;
+  }
+  .login-container {
+    background:#edeef7; padding:40px; border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+  }
+  .login-form { display:flex; flex-direction:column; width:300px; }
+  .login-form input {
+    margin-bottom:15px; padding:10px; border:1px solid #ccc;
+    border-radius:5px;
+  }
+  .login-form button {
+    padding:10px; background:#6741d9; color:#fff;
+    border:none; border-radius:5px; cursor:pointer;
+  }
+  .login-form button:hover { opacity:.9; }
+  .error { color:red; margin-bottom:15px; }
+  .success { color:green; margin-bottom:15px; }
+  
+  @media(max-width:768px){
+    .container { flex-direction:column; }
+    .sidebar, .right-sidebar { width:100%; padding:10px;}
+    .main-content { padding:10px;}
+  }
+  
